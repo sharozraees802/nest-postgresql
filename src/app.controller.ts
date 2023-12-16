@@ -1,4 +1,4 @@
-import { Controller, Delete, Get, Post, Put } from '@nestjs/common';
+import { Controller, Delete, Get, Param, Post, Put } from '@nestjs/common';
 
 @Controller('book')
 export class BookController {
@@ -21,5 +21,11 @@ export class BookController {
   @Get('/findAll')
   findAllBook(): string {
     return 'This is for finding all book';
+  }
+
+  @Get('/findBookById/:bookId')
+  findBookById(@Param() params): string {
+    console.log(params.bookId);
+    return `This is for finding book by id ${params.bookId}`;
   }
 }
