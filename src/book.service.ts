@@ -4,7 +4,7 @@ export class BookService {
   }
   //delete book
   deleteBook(): string {
-    return 'This is for deleteing book';
+    return 'This is for delete book';
   }
   //update book
   updateBook(): string {
