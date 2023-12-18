@@ -6,8 +6,8 @@ import { Module } from '@nestjs/common';
   providers: [],
   exports: [],
 })
-export class RootModule {
+export class AppModule {
   constructor() {
-    console.log('RootModule');
+    console.log('AppModule');
   }
 }
