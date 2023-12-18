@@ -3,7 +3,8 @@ import { BookService } from './book.service';
 
 @Controller('book')
 export class BookController {
-  public bookService: BookService = new BookService();
+  // Nest js provided a object of bookService
+  constructor(private bookService: BookService) {}
   //add book
   @Post('/add')
   addBook(): string {

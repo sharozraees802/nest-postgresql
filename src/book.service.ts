@@ -1,3 +1,6 @@
+import { Injectable } from '@nestjs/common';
+
+@Injectable()
 export class BookService {
   addBook(): string {
     return 'This will be add book';
