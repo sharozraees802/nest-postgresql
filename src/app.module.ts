@@ -1,13 +1,14 @@
 import { Module } from '@nestjs/common';
+import { BookModule } from './book/book.module';
 
 @Module({
-  imports: [],
+  imports: [BookModule],
   controllers: [],
   providers: [],
   exports: [],
 })
-export class RootModule {
+export class AppModule {
   constructor() {
-    console.log('RootModule');
+    console.log('AppModule');
   }
 }
